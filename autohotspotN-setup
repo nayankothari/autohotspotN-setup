@@ -140,16 +140,16 @@ shackwifi1 () {
 #get ham's wifi credentials
 echo "What wifi SSID would you like to connect to?"
 echo "This is the one already in your shack"
-read shackwifi
+read -p "Shack wifi name: " shackwifi
 echo "What is the password for this wifi?"
-read shackpass
+read -p "Shack wifi Password:" shackpass"
 
 echo;echo;
 echo "Your shack's current wifi is"
 echo "wifi $shackwifi"
 echo "passwd $shackpass"
 echo "Is this correct? y/n"
-read shackans
+read -p "Is this correct ? y/n: " shackans
 if [ $shackans == "y" ]
 then
 echo
